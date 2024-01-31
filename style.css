@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Kay Pho Du', serif;
+}
+
+body{
+    background-color: #222831;
+    color: #EEEEEE;
+}
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3.3rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #EEEEEE;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+input{
+    border: none;
+    outline: none;
+    padding: 20px;
+    padding-right: 70px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 10px 0 0 10px;
+    color: #222831;
+    
+}
+
+.search-btn{
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 0 10px 10px 0;
+    background-color: #46d5dc;
+    color: #222831;
+    cursor: pointer;
+}
+
+.show-more{
+    margin: 50px auto;
+    border: none;
+    outline: none;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 10px;
+    background-color: #46d5dc;
+    color: #222831;
+    cursor: pointer;   
+    display: none;
+}
+
+.search-result{
+    width: 80%;
+    margin: 100px auto 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+.search-result img{
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+@media (max-width: 600px) {
+    input{
+        padding: 15px 0 15px 10px;
+        font-size: 1rem;
+    }
+    .search-btn{
+        padding: 15px 5px 15px 10px;
+        font-size: 1rem;
+    }
+    .show-more{
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+    .search-result{
+        grid-template-columns: 1fr 1fr;
+    }
+    .search-result img{
+        height: 20vw;
+    }
+}
